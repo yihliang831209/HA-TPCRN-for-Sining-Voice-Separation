@@ -17,7 +17,7 @@
 
         <header>
           <h1>Harmonic-aware Triple-path Convolution Recurrent Neural Network for Sining Voice Separation</h1>
-          <h2>Separating mixture audio into background and vocal.</h2>
+          <h2>Separating mixture audio into background music and vocal.</h2>
         </header>
 
         <section id="main_content">
@@ -40,21 +40,21 @@
                 <source src="clean/MATBN_000036_000.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Clean</p>
+              <p>Mixture</p>
              </div>
             <div>
               <audio controls="">
                 <source src="noisy/babycry_nonstationary_5db_MATBN_000036_000.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Noisy</p>
+              <p>Separated vocal (TPRNN)</p>
             </div>
             <div>
               <audio controls="">
                 <source src="enhance/MATBN_000036_000.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Enhanced</p>
+              <p>Separated music (TPRNN)</p>
             </div>
 		<div>
 
@@ -62,22 +62,30 @@
                 <source src="clean/MATBN_000199_006.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Clean</p>
+              <p>Separated vocal (DPRNN)</p>
              </div>
             <div>
               <audio controls="">
                 <source src="noisy/babycry_nonstationary_0db_MATBN_000199_006.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Noisy</p>
+              <p>Separated music (DPRNN)</p>
             </div>
             <div>
               <audio controls="">
                 <source src="enhance/MATBN_000199_006.wav" type="audio/wav">
               Your browser does not support the audio element.
               </audio>
-              <p>Enhanced</p>
+              <p>Separated vocal (DPCRN)</p>
+            </div>	
+		<div>
+              <audio controls="">
+                <source src="enhance/MATBN_000199_006.wav" type="audio/wav">
+              Your browser does not support the audio element.
+              </audio>
+              <p>Separated music (DPCRN)</p>
             </div>
+	
           </div>
         <footer>
           This website is maintained by <a href="https://github.com/yihliang831209">YihLiang Shen</a><br>
